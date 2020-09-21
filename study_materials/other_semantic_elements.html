@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More Semantic Elements</title>
+</head>
+<body>
+  <ul>
+    <li><strong>time</strong> - A date or date and time format that can be parsed by a browser</li>
+    <li><strong>figure</strong> - An illustration, diagram, photo, code listing or the like that is referred to from the main content of the document</li>
+    <li><strong>figcaption</strong> - the caption that identifies the figure</li>
+  </ul>
+
+  <h3>attributes of the time element</h3>
+  <ul>
+    <li><strong>datetime</strong> - A date and time standard format that can be parsed by the browser</li>
+    <li><strong>pubdate</strong> - a boolean attribute that indicates that the date is the publication date for the article that contains the time element</li>
+  </ul>
+  <p>Next year's conference will be on <time datetime="2018-05-31">May 31st</time>.</p>
+  
+  <figure>
+    <code> var today = new Date();<br> document.writeln( today.getFullYear() );<br><br> </code>
+    <figcaption>JavaScript code for getting the full year.</figcaption>
+  </figure>  
+    
+  
+</body>
+</html>
