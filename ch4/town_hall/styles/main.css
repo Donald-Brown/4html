@@ -1,0 +1,55 @@
+/* Element Styles */
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+a { font-weight: bold; }
+a:link { color: #931420; }
+a:hover, a:focus { color: blue; } 
+a:visited { color: #f2972e; }
+
+ul { line-height: 1.5; }
+li, p { font-size: 95%; }
+em { font-weight: bold; }
+
+/* header styles */
+header img {
+  float: left;
+}
+
+header h2 {
+  font-size: 220%;
+  color: #f2972e;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+
+header h3 {
+  font-size: 130%;
+  font-style: italic;
+  text-align: center;
+}
+
+/* main content styles */
+main {
+  clear: left;
+}
+
+main h2 {
+  font-size: 130%;
+}
+
+main h1 { font-size: 170%; }
+
+main p.indent {
+  text-indent: 2em;
+}
+
+main a.date_passed { color: gray; }
+
+/* footer styles */
+footer p {
+  font-size: 80%;
+  text-align: right;
+}
