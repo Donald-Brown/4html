@@ -12,7 +12,7 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
-  width: 600px;
+  width: 800px;
   margin: 0 auto;
   border: 3px solid #931420;
   background-color: #fffded;
@@ -48,58 +48,97 @@ header .shadow {
   text-shadow: 2px 2px 3px #800000;
 }
 
-/* the styles for the section */
+/* the styles for the main section */
 main {
   clear: left;
-  padding: 0 30px;
+  padding: 0;
 }
 
-main h1 {
-  font-size: 150%;
-  /* border-top: 3px solid #931420;
-  border-bottom: 3px solid #931420; */
-  border: 3px double #931420;
-  border-radius: 10px;
-  box-shadow: 3px 3px 0 0 #000;
-  background-color: #fff;
-  padding: .3em 0 .3em 2em;
+/* section styles */
+section {
+  width: 525px;
+  float: right;
+  padding: 0 20px 20px;
 }
 
-main h2 {
+section h2 {
   font-size: 130%;
   color: #800000;
   padding: .5em 0 .25em;
 }
 
-main h3 {
-  font-size: 105%;
-  padding-bottom: .25em;
-}
-
-main img {
-  padding-bottom: 1em;
-}
-
-main p {
+section p {
   padding-bottom: .5em;
 }
 
-main blockquote {
+section blockquote {
   padding: 0 2em;
   font-style: italic;
 }
 
-main ul {
+section h1 {
+  font-size: 150%;
+  padding-top: .5em;
+  padding-bottom: .25em;
+  margin: 0;
+}
+
+section ul {
   padding-bottom: .25em;
   padding-left: 1.25em;
 }
 
-main li {
+section li {
   padding-bottom: .35em;
+}
+
+/* article styling */
+article {
+  padding: .5em 0;
+  border-top: 2px solid #800000;
+  border-bottom: 2px solid #800000;
+}
+
+article h2 {
+  padding-top: 0;
+}
+
+article h3 {
+  font-size: 105%;
+  padding-bottom: .25em;
+}
+
+article img {
+  float: right;
+  margin: .5em 0 .5em 1em;
+  border: 1px solid #000;
+}
+
+/* aside styles */
+aside {
+  width: 215px;
+  padding: 0 0 20px 20px;
+  /* float: right; */
+}
+
+aside h2 {
+  font-size: 130%;
+  color: #800000;
+  padding: .5em 0 .25em;
+}
+
+aside h3 {
+  font-size: 105%;
+  padding-bottom: .25em;
+}
+
+aside img {
+  padding-bottom: 1em;
 }
 
 /* the styles for the footer */
 footer {
+  clear: both;
   background-color: #931420;
 }
 

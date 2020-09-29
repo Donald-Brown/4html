@@ -1,0 +1,147 @@
+/* reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* the styles for the elements */
+html {
+  background-color: #fff;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 800px;
+  margin: 0 auto;
+  border: 3px solid #931420;
+  background-color: #fffded;
+}
+
+a:hover, a:focus {
+  font-style: italic;
+}
+
+/* the styles for the header */
+header {
+  border-bottom: 3px solid #931420;
+  padding: 1.5em 0 2em;
+  background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+header img {
+  float: left;
+  padding: 0 30px;
+}
+
+header h2 {
+  font-size: 170%;
+  color: #800000;
+}
+
+header h3 {
+  font-size: 130%;
+  font-style: italic;
+}
+
+header .shadow {
+  text-shadow: 2px 2px 3px #800000;
+}
+
+/* the styles for the main section */
+main {
+  clear: left;
+  padding: 0;
+}
+
+/* section styles */
+section {
+  width: 525px;
+  float: right;
+  padding: 0 20px 20px;
+}
+
+section h2 {
+  font-size: 105%;
+  padding: .25em 0 .25em;
+  line-height: 1.2;
+}
+
+section p {
+  padding-bottom: .5em;
+}
+
+section blockquote {
+  padding: 0 2em;
+  font-style: italic;
+}
+
+section h1 {
+  color: #800000;
+  font-size: 150%;
+  padding-top: .5em;
+  margin: 0;
+}
+
+section ul {
+  padding-bottom: .25em;
+  padding-left: 1.25em;
+}
+
+section li {
+  padding-bottom: .35em;
+}
+
+/* article styling */
+article {
+  padding: .5em 0;
+}
+
+article h2 {
+  padding-top: 0;
+}
+
+article h3 {
+  font-size: 105%;
+  padding-bottom: .25em;
+}
+
+article img {
+  float: right;
+  margin: .25em 0 .5em 1em;
+  border: 1px solid #000;
+}
+
+/* aside styles */
+aside {
+  width: 215px;
+  padding: 0 0 20px 20px;
+  /* float: right; */
+}
+
+aside h2 {
+  font-size: 130%;
+  color: #800000;
+  padding: .5em 0 .25em;
+}
+
+aside h3 {
+  font-size: 105%;
+  padding-bottom: .25em;
+}
+
+aside img {
+  padding-bottom: 1em;
+}
+
+/* the styles for the footer */
+footer {
+  clear: both;
+  background-color: #931420;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}

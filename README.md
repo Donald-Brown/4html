@@ -7,3 +7,8 @@
 -semantics
 -inline elements
 -html entities
+
+## chapter 6
+### column layouts
+-floats
+-css columns
