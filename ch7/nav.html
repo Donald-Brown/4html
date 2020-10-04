@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Verticle nav */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav_list ul {
+        list-style-type: none;
+        margin-left: 1.25em;
+        margin-bottom: 1.5em;
+      }
+
+      .nav_list ul li {
+        width: 200px;
+        margin-bottom: 0.5em;
+        border: 2px solid blue;
+      }
+
+      .nav_list ul li a {
+        display: block;
+        padding: 0.5em 0 0.5em 1.5em;
+        text-decoration: none;
+        font-weight: bold;
+        color: blue;
+      }
+
+      .nav_list ul li a.current {
+        background-color: silver;
+      }
+
+      /* Horizontal nav 1 */
+      #hor_1 ul {
+        padding: 1em 0;
+        list-style: none;
+        text-align: center;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+      }
+      #hor_1 ul li {
+        display: inline;
+        padding: 0 1.5em;
+      }
+      #hor_1 ul li a {
+        font-weight: bold;
+        color: blue;
+      }
+      #hor_1 ul li a.current_1 {
+        text-decoration: none;
+      }
+
+      /* Horizontal nav 2 */
+      #hor_2 ul {
+        list-style-type: none;
+      }
+      #hor_2 ul li {
+        float: left;
+      }
+      #hor_2 ul li a {
+        width: 175px;
+        display: block;
+        text-align: center;
+        padding: 1em 0;
+        text-decoration: none;
+        background-color: blue;
+        color:#fff;
+        font-weight: bold;
+        border-right: 2px solid #fff;
+      }
+      #hor_2 ul li a.last_item {
+        border-right: none;
+      }
+      #hor_2 ul li a.current_2 {
+        color: yellow;
+      }
+    </style>
+    <title>Simple Nav Menus</title>
+  </head>
+  <body>
+    <h2>Verticle Navigation</h2>
+    <nav class="nav_list">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li><a href="#" class="current">Become a member</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+
+    <h2>horizontal nav 1</h2>
+    <nav id="hor_1">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Get Tickets</a></li>
+        <li><a href="#" class="current_1">Become a member</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
+
+    <h2>horizontal nav 2</h2>
+    <nav id="hor_2">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Get Tickets</a></li>
+        <li><a href="#" class="current_2">Become a member</a></li>
+        <li><a href="#" class="last_item">About us</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

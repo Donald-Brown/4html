@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #nav_menu ul {
+      list-style: none; /*Remove bullets*/
+      position: relative; /* so submenus can be possitioned*/
+    }
+
+    #nav_menu ul li {
+        float: left; /*display horizontaly*/
+    }
+
+    #nav_menu ul ul {
+      display: none;
+      position: absolute;
+      top: 100%; /*postiton at bottom of main menu*/
+      padding: 0;
+    }
+    #nav_menu ul li a {
+      width: 175px;
+      display: block;
+      text-align: center;
+      padding: 1em 0;
+      text-decoration: none;
+      background-color: blue;
+      color:#fff;
+      font-weight: bold;
+      border-right: 2px solid #fff;
+    }
+    #nav_menu ul li a:hover, #nav_menu ul li a:focus {
+      background-color: #eee;
+      color: #000;
+    }
+
+
+    #nav_menu ul ul li {
+      float: none;
+    }
+    /* #nav_menu ul ul li a{
+      background-color: #eee;
+      color: #000;
+    } */
+    #nav_menu ul ul li a:hover, #nav_menu ul ul li a:focus {
+      background-color: #eee;
+      color: #000;
+    }
+    #nav_menu ul li:hover > ul {
+      display: block;
+    }
+    #nav_menu > ul::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    /* #nav_menu ul li a.last_item {
+      border-right: none;
+    } */
+    #nav_menu ul li a.current {
+      color: yellow;
+    }
+    #nav_menu ul li a.current:hover, #nav_menu ul li a.current:focus {
+      color: blue;
+    }
+  </style>
+  <title>Nav with hover</title>
+</head>
+<body>
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Speakers</a>
+        <ul>
+          <li><a href="#">Jeffery Toobin</a></li>
+          <li><a href="#">Andrew Ross Sorkin</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="current">Become a member</a></li>
+      <li class="last_item"><a href="#">About us</a>
+        <ul>
+          <li><a href="#">Our History</a></li>
+          <li><a href="#">Board of Directors</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>

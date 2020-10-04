@@ -48,6 +48,56 @@ header .shadow {
   text-shadow: 2px 2px 3px #800000;
 }
 
+/* Styles for the nav-menu */
+#nav_menu {
+  position: relative;
+}
+
+#nav_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav_menu ul li {
+  float: left;
+}
+
+#nav_menu ul li a {
+  width: 160px;
+  display: block;
+  text-align: center;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: #800000;
+  color: #fff;
+  font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+  color: yellow;
+}
+
+#nav_menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+#nav_menu ul ul li {
+  float: none;
+}
+
+#nav_menu ul li:hover ul {
+  display: block;
+}
+
+#nav_menu ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* the styles for the main section */
 main {
   clear: left;
@@ -90,6 +140,7 @@ section ul {
 
 section li {
   padding-bottom: .35em;
+  list-style-type: circle;
 }
 
 /* article styling */

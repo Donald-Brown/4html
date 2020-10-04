@@ -4,39 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      body {
-        border: 3px dotted black;
-        margin: 10px;
+      ul li ul {
+        display: none;
       }
-      main {
-        border: 2px solid black;
-        width: 500px;
-        margin: 20px;
-        padding: 10px;
+
+      ul a {
+        background-color: #000;
+        text-decoration: none;
+        color: #fff;
       }
-      h1,
-      p {
-        border: 1px dashed black;
-        padding: 10px;
+
+      ul li {
+        max-width: 100px;
       }
-      h1 {
-        margin: 0.5em 0 .25em; /* .5em top, 0 right and left, .25em bottom */
-        padding-left: 15px;
-      }
-      p {
-        margin: 0;
-        padding-left: 15px;
+
+      ul li:hover ul {
+        display: block;
       }
     </style>
     <title>Document</title>
   </head>
   <body>
     <main>
-      <h1>San Joaquin Valley Town Hall</h1>
-      <p>
-        Welcome to San Joaquin Valley Town Hall. We have some fascinating
-        speakers for you this season!
-      </p>
+      <ul>
+        <li>Hello</li>
+        <li>Goodbye</li>
+        <li>
+          <a href="#">New Menu</a>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </li>
+        <li>Food is here</li>
+      </ul>
     </main>
   </body>
 </html>
