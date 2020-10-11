@@ -2,16 +2,16 @@
 
 ## chapter 3
 
--Favicons
--metadata
--semantics
--inline elements
--html entities
+- Favicons
+- metadata
+- semantics
+- inline elements
+- html entities
 
 ## chapter 6
 ### column layouts
--floats
--css columns
+- floats
+- css columns
 
 ## chapter 7
 ### lists, links, and nav menus
@@ -23,4 +23,13 @@
 
 ## chapter 8
 ### Responsive Web Design
+- viewport
+- media queries, 302 widths
+- slick nav
+- page with custom slick nav
+
+# Section 2
+Page layout and responsive web design
+## chapter 9
+### Flex Box
 - 
