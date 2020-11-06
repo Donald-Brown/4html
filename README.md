@@ -36,4 +36,4 @@ Page layout and responsive web design
 
 ## chapter 10
 ### Grid Layout
-- 
+- see examples

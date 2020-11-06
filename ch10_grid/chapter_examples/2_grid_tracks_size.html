@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; }
+    div { background: silver; }
+    #grid1, #grid2, #grid3, #grid4, #grid5 {
+      display: grid;
+      grid-gap: 20px;
+      margin-bottom: 20px;
+    }
+    /** Fixed */
+    #grid1 {
+      width: 640px;
+      grid-template: repeat(2, 50px) / repeat(3, 1fr);
+    }
+
+    /* Mixed units */
+    #grid2 {
+      width: 640px;
+      grid-template: repeat(2, 50px) / 100px 30% 1fr;
+    }
+
+    /* Repeat Multiple Widths */
+    #grid3 {
+      width: 640px;
+      grid-template: repeat(2, 50px) / repeat(2, 50px 1fr);
+    }
+
+    /* Minmax with autofit */
+    #grid4 {
+      max-width: 720px;
+      grid-template: repeat(2, 50px) / repeat(auto-fit, minmax(75px, 1fr));
+    }
+
+    /* minmax with autofill */
+    #grid5 {
+      max-width: 720px;
+      grid-template: repeat(2, 50px) / repeat(auto-fill, minmax(75px, 1fr));
+    }
+  </style>
+  <title>Adding dimensions to grid items</title>
+</head>
+<body>
+  <h1>Fractional Widths</h1>
+  <section id="grid1">
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+    <div>div 4</div>
+    <div>div 5</div>
+    <div>div 6</div>
+  </section>
+  <h1>Mixed Units</h1>
+  <section id="grid2">
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+    <div>div 4</div>
+    <div>div 5</div>
+    <div>div 6</div>
+  </section>
+  <h1>Repeat Multiple Widths</h1>
+  <section id="grid3">
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+    <div>div 4</div>
+    <div>div 5</div>
+    <div>div 6</div>
+  </section>
+  <h1>Repeat with auto-fit and minmax</h1>
+  <section id="grid4">
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+    <div>div 4</div>
+    <div>div 5</div>
+    <div>div 6</div>
+  </section>
+  <h1>Repeat with auto-fill and minmax</h1>
+  <section id="grid5">
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+    <div>div 4</div>
+    <div>div 5</div>
+    <div>div 6</div>
+  </section>
+</body>
+</html>

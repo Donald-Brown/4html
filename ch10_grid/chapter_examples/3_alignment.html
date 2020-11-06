@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; }
+    div { background-color: silver; }
+
+    /* generic grid properties */
+    #grid1, #grid2, #grid3 {
+      background-color: #ededed;
+      display: grid;
+      width: 100%;
+      height: 300px;
+      grid-template-columns: 150px 150px 150px;
+      grid-template-rows: 100px 100px;
+      grid-gap: 20px;
+    }
+
+    /* justify-content (position horizontally) */
+    /* align-content (position vertically) */
+    #grid1 {
+      justify-content: center; 
+      align-content: center;
+    }
+
+    /* justify-items (position horizontally) */
+    /* align-items (position vertically) */
+    #grid2 {
+      justify-items: center;
+      align-items: start;
+    }
+
+    #grid2 div:first-of-type {
+      align-self: center;
+      justify-self: end;
+    }
+
+    /* justify-content (position horizontally) */
+    /* align-content (positon vertically) */
+    #grid3 {
+      justify-content: space-between;
+      align-content: end;
+    }
+  </style>
+  <title>How to position and align grid items in a container</title>
+</head>
+<body>
+  <h2>properties for horizontal alignment</h2>
+  <ul>
+    <li>justify-content</li>
+    <li>justify-items</li>
+    <li>justify-self</li>
+  </ul>
+  <h2>properties for verticle alignment</h2>
+  <ul>
+    <li>align-content</li>
+    <li>align-items</li>
+    <li>align-self</li>
+  </ul>
+  <h2>common values</h2>
+  <ul>
+    <li>start</li>
+    <li>end</li>
+    <li>center</li>
+    <li>stretch</li>
+    <li>space-around</li>
+    <li>space-between</li>
+    <li>space-evenly</li>
+  </ul>
+  <h1>justify-content: center;</h1>
+  <section id="grid1">
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+    <div>div 4</div>
+    <div>div 5</div>
+    <div>div 6</div>
+  </section>
+  <h1>justify-items: center;</h1>
+  <section id="grid2">
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+    <div>div 4</div>
+    <div>div 5</div>
+    <div>div 6</div>
+  </section>
+  <h1>align-content: end;</h1>
+  <section id="grid3">
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+    <div>div 4</div>
+    <div>div 5</div>
+    <div>div 6</div>
+  </section>
+</body>
+</html>

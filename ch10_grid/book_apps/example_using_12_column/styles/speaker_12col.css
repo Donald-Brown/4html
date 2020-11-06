@@ -1,0 +1,272 @@
+/* * type selectors */
+html {
+  background-image: linear-gradient(to bottom, #fff 0%, #facd8a 100%);
+}
+
+body {
+  font-family: verdana, Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  width: 96%;
+  max-width: 1200px;
+  background-color: #fff;
+  margin: 15px auto;
+  padding: 15px 0;
+  border: 1px solid #000;
+  display: grid;
+  grid-template: repeat(4, auto) / repeat(12, 1fr);
+  grid-gap: 1.5em;
+}
+
+article, aside, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+a { font-weight: bold; }
+a:link, a:visited { color: #931420; }
+a:hover, a:focus { color: #000; }
+
+p {
+  font-size: .875em;
+  padding-bottom: 0.5em;
+}
+
+em { font-weight: bold; }
+
+/* * styles for the header */
+header {
+  grid-row: 1 / 2;
+  grid-column: 1 / span 12;
+}
+
+header h2 {
+  font-size: 2.25em;
+  color: #f2972e;
+  text-shadow: 2px 3px 0 #000;
+  margin-left: 12%;
+  margin-bottom: 0.25em;
+}
+
+header h3 {
+  font-size: 1.25em;
+  font-style: italic;
+  margin-left: 12%;
+}
+
+header img {
+  width: 8%;
+  max-width: 80px;
+  min-width: 40px;
+  float: left;
+  margin-left: 2%;
+}
+
+/* * styles for the navigation menu */
+#nav_menu {
+  grid-row: 2 / 3;
+  grid-column: 1 / span 12;
+}
+
+#nav_menu ul {
+  list-style: none;
+  display: grid;
+  grid-template: auto / repeat(5, 1fr);
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#nav_menu ul li a {
+  text-align: center;
+  display: block;
+  padding: 0.7em 0;
+  text-decoration: none;
+  background-color: #facd8e;
+}
+
+#nav_menu ul li a.current {
+  color: #f2972e;
+}
+
+/* * styles for the article */
+article {
+  margin-left: 3.4%;
+  grid-row: 3 / 4;
+  grid-column: 1 / span 7;
+}
+
+article h1 {
+  font-size: 1.625em;
+  margin-bottom: 0.35em;
+}
+
+article img {
+  max-width: 100%;
+  margin: 0 1.5em 1em 0;
+}
+
+/* * styles for the aside */
+aside {
+  max-height: 200px;
+  min-height: 180px;
+  padding: 5%;
+  background-color: #ffebc6;
+  margin-right: 5%;
+  grid-row: 3 / 4;
+  grid-column: 8 / span 5;
+}
+
+aside h2 {
+  font-size: 1.25em;
+  padding-bottom: 0.5em;
+}
+
+aside li {
+  font-size: 0.875em;
+  padding-bottom: 0.35em;
+}
+
+/* * styles for the footer */
+footer {
+  border-top: 2px solid #f2972e;
+  padding-top: 0.7em;
+  grid-row: 4 / 5;
+  grid-column: 1 / span 12;
+}
+
+footer p {
+  font-size: 0.75em;
+  text-align: right;
+  margin-right: 2%;
+}
+
+
+/* * hide mobile nav */
+#mobile_menu { display: none; }
+
+/* ? media queries */
+/* * tablet portrait to standard 960 */
+@media only screen and (max-width: 959px){
+  #nav_menu ul li a {
+    font-size: 0.875em;
+  }
+  article h1 {
+    font-size: 1.5em;
+  }
+  aside h2 {
+    font-size: 1.125em;
+  }
+}
+
+/* * mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px){
+  body {
+    width: 100%;
+    margin: 0;
+    border: none;
+    grid-template: repeat(5, auto) / 1fr;
+    grid-gap: 0;
+  }
+  header {
+    grid-column: 1 / 2;
+    padding-bottom: 1.5em;
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr;
+    grid-gap: 0.3em;
+    justify-items: center;
+  }
+
+  header h2 {
+    font-size: 1.625em;
+    margin-left: 0;
+  }
+
+  header h3 {
+    font-size: 1em;
+    margin-left: 0;
+  }
+
+  header img {
+    float: none;
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+
+  #nav_menu {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: block;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .slicknav_menu {
+    background-color: #facd8e;
+  }
+
+  article {
+    width: 96%;
+    margin: 1.2em 2%;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+  }
+
+  article img {
+    float: left;
+    width: 50%;
+    margin-right: 2%;
+  }
+
+  aside {
+    margin-right: 0;
+    padding: 1em 2%;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  aside nav ul {
+    margin-bottom: 0;
+  }
+
+  footer {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+  }
+
+  footer p {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+/* *mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px){
+  header h2 {
+    font-size: 1.375em;
+  }
+  header h3 {
+    font-size: 0.8125em;
+  }
+  p {
+    font-size: 0.875em;
+  }
+  article h1, aside h2 {
+    font-size: 1em;
+  }
+  aside li {
+    font-size: 0.875em;
+  }
+  article img {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+  aside h3 {
+    font-size: 0.9375em;
+  }
+  footer p {
+    font-size: 0.6875em;
+  }
+}
