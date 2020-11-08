@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    li {
+      background-color: silver;
+      width: 150px;
+      margin: 0 15px 15px 0;
+      padding: 5px;
+      text-align: center;
+    }
+
+  /** Flexbox styles */
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+    }
+    #menu1 { flex-direction: row; }
+    #menu2 { flex-direction: column; }
+  </style>
+  <title>creating the first Flexbox</title>
+</head>
+<body>
+  <h1>flex-direction: row</h1>
+  <nav>
+    <ul id="menu1">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">Speakers</a></li>
+      <li><a href="solutions.html">Get Tickets</a></li>
+      <li><a href="support.html">Become a Member</a></li>
+      <li><a href="contactus.html">About Us</a></li>
+    </ul>
+  </nav>
+  <h1>flex-direction: column</h1>
+  <nav>
+    <ul id="menu2">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">Speakers</a></li>
+      <li><a href="solutions.html">Get Tickets</a></li>
+      <li><a href="support.html">Become a Member</a></li>
+      <li><a href="contactus.html">About Us</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

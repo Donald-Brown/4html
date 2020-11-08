@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; }
+    main {
+      max-width: 500px;
+      border: 1px solid #000;
+      display: flex;
+    }
+    nav, section, aside {
+      text-align: center;
+      padding: 5px 0;
+    }
+    nav, aside { background-color: silver; }
+    section { background-color: #999; }
+
+    nav, section, aside { flex-basis: 250px; }
+    nav { flex-shrink: 0; }
+    section, aside { flex-shrink: 1; }
+  </style>
+  <title>Setting dimensions using flex-shrink</title>
+</head>
+<body>
+  <h1>flex-shrink with fixed widths</h1>
+  <main>
+      <nav>Navigation</nav>
+      <section>Content</section>
+      <aside>Sidebar</aside>             
+  </main>
+</body>
+</body>
+</html>

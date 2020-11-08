@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; }
+    main {
+      max-width: 800px;
+      border: 1px solid #000;
+      display: flex;
+    }
+    nav, section, aside {
+      text-align: center;
+      padding: 5px 0;
+    }
+    nav, aside { background-color: silver; }
+    section { background-color: #999; }
+
+    nav, aside {
+      flex-basis: 100px;
+      flex-grow: 1;
+    }
+    section {
+      flex-basis: 200px;
+      flex-grow: 3;
+    }
+  </style>
+  <title>Setting dimensions with flex-grow</title>
+</head>
+<body>
+  <h1>flex-grow with fixed widths</h1>
+  <main>
+      <nav>Navigation</nav>
+      <section>Content</section>         
+      <aside>Sidebar</aside>
+  </main>
+</body>
+</html>
