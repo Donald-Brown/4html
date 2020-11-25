@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      padding: 10px;
+    }
+    img {
+      border: none;
+    }
+  </style>
+  <title>Image Map</title>
+</head>
+<body>
+  <p>
+    <img src="images/washington_divided.gif" alt="Washington" usemap="#washington">
+    <map name="washington">
+      <area shape="rect" coords="0,0,132,37" href="north.html" alt="Northern Washington" title="Northern Washigton">
+      <area shape="rect" coords="0,38,132,82" href="south.html" alt="Southern Washington" title="Southern Washington">
+    </map>
+  </p>
+  <p>
+    <img src="images/web_books.jpg" alt="PHP/MySQL and JavaScript/jQuery books" usemap="#books">
+    <map name="books">
+      <area shape="poly" coords="0,30,115,0,133,67,109,159,39,174" href="php_mysql.html" alt="PHP/MySQL book" title="PHP/MySQL">
+      <area shape="poly" coords="145,21,261,52,222,195,107,165" href="javascript_jquery.html" alt="JavaScript/jQuery book" title="JavaScript/jQuery">
+    </map>
+  </p>
+</body>
+</html>

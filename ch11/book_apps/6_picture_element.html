@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Picture Element</title>
+</head>
+<body>
+  <picture>
+    <source media="(min-width: 960px)" srcset="images/mountains01.png"> <source media="(min-width: 768px)" srcset="images/mountains02.png"> <source media="(min-width: 460px)" srcset="images/mountains03.png"> <img src="images/mountains04.png" alt="">
+  </picture>
+
+  <picture>
+    <source type="image/webp" srcset="images/mountains04.webp"> <img src="images/mountains04.png" alt="">
+  </picture>
+</body>
+</html>

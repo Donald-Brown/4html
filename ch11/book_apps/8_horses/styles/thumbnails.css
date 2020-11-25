@@ -1,0 +1,105 @@
+/** Styles for the elements */
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 84%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 200%;
+  color: #8b0000;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 140%;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+img {
+  padding-right: 0.25em;
+}
+
+a { font-weight: bold; }
+a:link { color: #000; }
+a:visited { color: gray; }
+a:active { color: red; }
+
+/** Styles for the page division */
+body {
+  width: 750px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+/** Styles for the header division */
+header {
+  margin-top: 0;
+}
+
+header h2 { font-weight: normal; }
+
+header img {
+  float: left;
+  margin-right: 20px;
+}
+
+nav {
+  clear: left;
+  padding-top: 0.2em;
+  padding-bottom: 0.3em;
+  border-top: 2px solid #8b0000;
+  border-bottom: 2px solid #8b0000;
+}
+
+nav p {
+  /* color: #8b0000; */
+  text-align: right;
+  margin: 0;
+}
+
+nav a:link {
+  text-decoration: none;
+}
+
+/** Styles for the photos section */
+aside {
+  width: 200px;
+  padding: 0 10px;
+  float: left;
+}
+
+aside a:link { color: #8b0000; }
+aside a:visited { color: #b22222; }
+aside a:active { color: red; }
+
+/** Styles for the main section */
+section { margin-left: 240px; }
+
+section p {
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+section img {
+  margin-right: 0.2em;
+  border: none
+}
+
+/** Styles for the footer */
+footer { clear: both; }
+
+footer p {
+  font-size: 80%;
+  text-align: right;
+  margin-top: 2.5em;
+  margin-bottom: 0;
+  border-top: 2px solid #8b0000;
+  padding-top: 1em;
+}
