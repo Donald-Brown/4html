@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      border-collapse: collapse;
+      border: 1px solid #000;
+      margin: 10px auto;
+    }
+
+    thead, tfoot {
+      background-color: aqua;
+      font-weight: bold;
+      border: 1px solid #000;
+    }
+
+    th, td {
+      padding: 0.2em 0.7em;
+      text-align: right;
+      border: 1px solid #000;
+    }
+
+    th:first-child, td:first-child {
+      text-align: left;
+    }
+
+    th:nth-child(2), td:nth-child(2) {
+      text-align: center;
+    }
+
+    tbody tr:nth-child(2n) {
+      background-color: silver;
+    }
+  </style>
+  <title>Intro Table with CSS3 Formatting</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Book</th>
+        <th>Year Published</th>
+        <th>Sales</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PHP and MySQL</td>
+        <td>2017</td>
+        <td>$372,381</td>
+      </tr>
+      <tr>
+        <td>JavaScript and jQuery</td>
+        <td>2017</td>
+        <td>$305,447</td>
+      </tr>
+      <tr>
+        <td>Android Programming</td>
+        <td>2015</td>
+        <td>$292,444</td>
+      </tr>
+      <tr>
+        <td>Java Servlets and JSP</td>
+        <td>2014</td>
+        <td>$328,992</td>
+      </tr>
+      <tr>
+        <td>C# Programming</td>
+        <td>2016</td>
+        <td>$351,200</td>
+      </tr>
+      <tr>
+        <td>ASP.NET with C#</td>
+        <td>2016</td>
+        <td>$404,332</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total Sales</th>
+        <td></td>
+        <td>$1,399,264</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

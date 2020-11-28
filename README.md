@@ -66,3 +66,17 @@ Page layout and responsive web design
 - short section on favicons
 - working with svg's
 
+
+## chapter 12
+### working with tables 
+- basic tables
+- css for formatting
+- more skills
+
+## chapter 13
+### How to word with forms
+- How to use form controls
+- Other form Skills
+- using HTML5 for data validation
+- How to use HTML5 controls
+- A web page that uses HTML5 data validation

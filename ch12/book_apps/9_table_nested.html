@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 20px; }
+
+    table { border-collapse: collapse; }
+
+    tr { border-top: 1px solid #000; }
+
+    #outer { border: 1px solid #000; }
+
+    #outer th { background-color: #b0e0e6; }
+
+    #inner { border: 1px solid #000; }
+
+    #inner th { background-color: #fff; }
+
+    td, th { padding: 3px 7px; }
+
+    td.padding, th.padding { padding: 3px 15px 3px 7px; }
+
+    th.left { text-align: left; }
+
+    th.right, td.right { text-align: right; }
+  </style>
+  <title>Nested Tables</title>
+</head>
+<body>
+  <table id="outer">
+    <tr>
+      <th class="left">Region</th>
+      <th class="right padding">YTD sales</th>
+    </tr>
+    <tr>
+      <th class="left">West</th>
+      <td class="right padding">$68,684.34</td>
+    </tr>
+    <tr>
+      <th class="left">Central</th>
+      <td>
+        <table id="inner">
+          <tr>
+            <th class="left">North</th>
+            <td class="right">$21,223.08</td>
+          </tr>
+          <tr>
+            <th class="left">South</th>
+            <td class="right">$41,274.06</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <th class="left">East</th>
+      <td class="right padding">$72,741.06</td>
+    </tr>
+
+  </table>
+</body>
+</html>
