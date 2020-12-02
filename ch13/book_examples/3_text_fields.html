@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 30px;
+    }
+  </style>
+  <title>Text Fields</title>
+</head>
+<body>
+  <form action="addtocart.php" name="myform" method="get">
+    <br><br>
+    Quantity: <input type="text" name="quantity" value="1" size="5" readonly>
+    <br><br>
+    Username: <input type="text" name="username" autofocus>
+    <br><br>
+    Password: <input type="text" name="password" placeholder="Enter your password" maxlength="6">
+    Hidden: <input type="hidden" name="productid" value="widget">
+    <br><br>
+    <input type="submit" name="submit" value="submit">
+  </form>
+</body>
+</html>

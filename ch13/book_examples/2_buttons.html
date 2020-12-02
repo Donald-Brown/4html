@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 30px; }
+  </style>
+  <title>Buttons</title>
+</head>
+<body>
+  <form action="sample.php" name="myform" method="post">
+    <!-- the 3 most common types of buttons button, submit, and reset -->
+    <br>
+    <input type="button" name="message" value="Alert me" onclick="return alert('Hello World!')">
+    <input type="submit" name="checkout" value="Checkout">
+    <input type="reset" name="resetform" value="Reset">
+    <!-- An Image button -->
+    <input type="image" src="../../images/submit.jpg" alt="Submit" width="114" height="42">
+    <!-- A button with image and text nested inside -->
+    <button type="submit"><img src="../../images/addtocart.png" alt="Add to cart" width="30" height="23">Add to Cart</button>
+  </form>
+</body>
+</html>
