@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 30px;
+      }
+    </style>
+    <title>List Box</title>
+  </head>
+  <body>
+    <form action="order.php" name="myform" method="get">
+      Toppings: <br />
+      <select name="toppings" multiple size="5">
+        <option value="pepperoni">Pepperoni</option>
+        <option value="sausage">Sausage</option>
+        <option value="mushrooms">Mushrooms</option>
+        <option value="olives">Black Olives</option>
+        <option value="onions">Onions</option>
+        <option value="bacon">Canadian Bacon</option>
+        <option value="pineapple">Pineapple</option>
+      </select>
+      <input type="submit" />
+
+      <p>You have to hold down the control key to select multiple options</p>
+    </form>
+  </body>
+</html>

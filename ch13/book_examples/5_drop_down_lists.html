@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 30px; }
+  </style>
+  <title>Drop Down List</title>
+</head>
+<body>
+  <form action="order.php" nane="myform" method="GET">
+    Crust: <br>
+    <select name="crust">
+      <option value="thin">Thin Crust</option>
+      <option value="deep">Deep Dish</option>
+      <option value="hand">Hand Tossed</option>
+    </select>
+    <br><br><br>
+    Size: <br>
+    <select name="size">
+      <optgroup label="The New Yorker">
+        <option value="ny10" selected>10"</option>
+        <option value="ny12">12"</option>
+        <option value="ny16">16"</option>
+      </optgroup>
+      <optgroup label="The Chicago">
+        <option value="chi10">10"</option>
+        <option value="chi12">12"</option>
+        <option value="chi16">16"</option>
+      </optgroup>
+    </select>
+    <input type="submit">
+  </form>
+</body>
+</html>
