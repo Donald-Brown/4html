@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 30px;
+      }
+    </style>
+    <title>Labels</title>
+  </head>
+  <body>
+    <form action="order.html" id="order" name="order" method="get">
+      <label for="quantity">Quantity:</label>
+      <input
+        type="text"
+        id="quantity"
+        name="quantity"
+        value="1"
+        size="5"
+      /><br /><br />
+
+      Crust: <br />
+      <input type="radio" id="crust1" name="crust" value="thin" />
+      <label for="crust1">Thin Crust</label><br />
+      <input type="radio" id="crust2" name="crust" value="deep" />
+      <label for="crust2">Deep Dish</label><br />
+      <input type="radio" id="crust3" name="crust" value="hand" />
+      <label for="crust3">Hand Tossed</label><br />
+      <br />
+
+      Toppings: <br />
+      <input type="checkbox" id="topping1" name="topping1" value="pepperoni" />
+      <label for="topping1">Pepperoni</label><br />
+      <input type="checkbox" id="topping2" name="topping2" value="mushrooms" />
+      <label for="topping2">Mushrooms</label><br />
+      <input type="checkbox" id="topping3" name="topping3" value="olives" />
+      <label for="topping3">Black Olives</label><br /><br />
+
+      <input type="submit" value="Submit Order" />
+    </form>
+  </body>
+</html>
