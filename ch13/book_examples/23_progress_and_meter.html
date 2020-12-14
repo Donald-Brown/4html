@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 30px;
+    }
+  </style>
+  <!-- <script>
+    function setProgressAndMeter() {
+      let progress = document.getElementById('progressBar');
+      setInterval(setProgressAndMeter, 500);
+      progress.value += 10;
+
+      let meter = document.getElementById('meterBar');
+      setInterval(setProgressAndMeter, 500);
+      meter.value += 10;
+    };
+  </script> -->
+  <title>Progress</title>
+</head>
+<body onload="setProgressAndMeter()">
+  <h3>Progess Element</h3>
+  Progress set by JavaScript on page load:
+  <progress id="progressBar" max="100" min="0"></progress>
+  <h3>Meter Element</h3>
+  Meter set by JavaScript on page load:
+  <meter id="meterBar" max="100" value="0" optimum="50" high="60"></meter>
+
+  <script>
+    setProgressAndMeter = () => {
+      let progress = document.getElementById('progressBar');
+      
+      setInterval(setProgressAndMeter, 500);
+      progress.value += 10;
+
+      let meter = document.getElementById('meterBar');
+      // setInterval(setProgressAndMeter, 500);
+      meter.value += 10;
+    };
+  </script>
+
+</body>
+</html>

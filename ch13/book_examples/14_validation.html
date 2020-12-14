@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font: 90% Arial, sans-serif;
+        margin: 20px;
+      }
+      input {
+        width: 15em;
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+      }
+      input:required,
+      input[required] {
+        border: 2px solid red;
+      }
+      input:valid {
+        border: 1px solid #000;
+      }
+      input:invalid {
+        box-shadow: none;
+      }
+    </style>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form name="myform" action="survey.php" method="post">
+      Name: <input type="text" name="name" required /><br />
+      Address: <input type="text" name="address" novalidate /><br />
+      Zip: <input type="text" name="zip" required /><br />
+      Phone:
+      <input type="text" name="phone" required autocomplete="off" /><br />
+      <input type="submit" name="submit" value="Submit Survey" />
+    </form>
+  </body>
+</html>

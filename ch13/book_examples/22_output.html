@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 30px;
+    }
+    output {
+      padding: 10px;
+      margin-left: 10px;
+      border: 1px solid #000;
+    }
+  </style>
+  <title>Output</title>
+</head>
+<body>
+  <p>Enter numbers in both fields and click the calculate button</p>
+  <form onsubmit="return false">
+    <input type="number" name="x" min="100" step="5" value="100"> + 
+    <input type="number" name="y" min="100" step="5" value="100"><br><br>
+    <input type="button" value="Calculate" onclick="result.value = parseInt(x.value) + parseInt(y.value)">
+    Total: <output name="result" for="x y"></output>
+  </form>
+  
+</body>
+</html> 

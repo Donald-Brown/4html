@@ -75,6 +75,7 @@ Page layout and responsive web design
 
 ## chapter 13
 ### How to work with forms
+- extensive examples
 - How to use form controls
 - Other form Skills
 - using HTML5 for data validation

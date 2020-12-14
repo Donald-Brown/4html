@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="styles/tickets.css">
+
+  <title>San Joaquin Valley Town Hall</title>
+</head>
+<body>
+  <header>
+    <img src="../images/town_hall_logo.gif" alt="Town Hall Logo" height="80">
+    <h2>San Joaquin Valley Town Hall</h2>
+		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+  </header>
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="luncheons.html">Luncheons</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a href="aboutus.html">About Us</a>
+          <ul>
+            <li><a href="#">Our History</a></li>
+            <li><a href="#">Board of Directors</a></li>
+            <li><a href="#">Past Speakers</a></li>
+            <li><a href="#">Contact Information</a></li>
+          </ul>
+        </li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h1>Order Form</h1>
+      <form action="register_account.html" metho="get" name="registration_form" id="registration_form">
+        <!-- <fieldset>
+          <legend>Registration Information</legend>
+
+          <label for="email">E-Mail:</label>
+          <input type="email" name="email" id="email" autofocus required><br>
+
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" placeholder="At least 6 letters or numbers" pattern="[a-zA-Z0-9]{6,}" title="Must be at least 6 alphanumeric characters" required><br>
+
+          <label for="verify">Verify Password:</label>
+          <input type="password" name="verify" id="verify" required><br>
+
+        </fieldset> -->
+        <fieldset>
+          <legend>Member Information</legend>
+
+          <label for="email">E-Mail:</label>
+          <input type="email" name="email" id="email" autofocus required><br>
+
+          <label for="first_name">First Name:</label>
+          <input type="text" name="first_name" id="first_name" required><br>
+
+          <label for="last_name">Last Name:</label>
+          <input type="text" name="last_name" id="last_name" required><br>
+
+          <label for="address">Address:</label>
+          <input type="text" name="address" id="address" required><br>
+
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city" required><br>
+
+          <label for="state">State:</label>
+          <input type="text" name="state" id="state" maxlength="2" placeholder="2-character code" required><br>
+
+          <label for="zip">Zip Code:</label>
+          <input type="text" name="zip" id="zip" placeholder="5 or 9 digits" pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits" required><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}[\-]?\d{3}[\-]?\d{4}" title="Must be 999-999-9999 format"><br>
+        </fieldset>
+        <fieldset>
+          <legend>Ordering Information</legend>
+          <label for="membership_type">Order Type:</label>
+          <select name="membership_type" id="membership_type">
+            <option value="m">Member Package</option>
+            <option value="d">Donor Package</option>
+            <option value="s">Single Ticket</option>
+          </select><br>
+
+          <!-- <label for="starting_date">Starting Date:</label>
+          <input type="date" name="starting_date" id="starting_date" required><br> -->
+
+          <label for="tickets">Number of Tickets:</label>
+          <input type="number" name="tickets" id="tickets" min="1" max="4" placeholder="Number of Tickets"><br>
+        </fieldset>
+        <fieldset>
+          <legend>Payment Method</legend>
+          <input type="radio" name="payment" id="bill">
+          <label for="bill" class="small">Bill Me</label>
+
+          <input type="radio" name="payment" id="credit" checked>
+          <label for="credit" class="small">Credit Card</label>
+        </fieldset>
+        <fieldset>
+          <legend>Credit Card Information</legend>
+          <label for="card">Card Type:</label>
+          <select name="card" id="card">
+            <option value="v">Visa</option>
+            <option value="m">MasterCard</option>
+            <option value="d">Discover</option>
+          </select><br>
+          <label for="number">Card Number:</label>
+          <input type="text" maxlength="16" placeholder="16 digits" pattern="\d{16}" required>
+          <label for="experation_month experation_year">Experation Date:</label>
+          <select id="experation_month" name="experation_month">
+            <option value="ja">January</option>
+            <option value="fe">February</option>
+            <option value="ma">March</option>
+            <option value="ap">April</option>
+            <option value="ma">May</option>
+            <option value="ju">June</option>
+            <option value="jl">July</option>
+            <option value="au">August</option>
+            <option value="se">September</option>
+            <option value="oc">October</option>
+            <option value="no">November</option>
+            <option value="de">December</option>
+          </select>
+          <select name="experation_year" id="experation_year">
+            <option value="17">2017</option>
+            <option value="18">2018</option>
+            <option value="19">2019</option>
+            <option value="20">2020</option>
+            <option value="21">2021</option>
+          </select>
+        </fieldset>
+        <fieldset id="buttons">
+          <legend>Submit Your Order</legend>
+          <label>&nbsp;</label>
+          <input type="submit" id="submit" value="Submit">
+          <input type="reset" id="reset" value="Reset Fields"><br>
+          
+        </fieldset>
+      </form>
+    </section>
+    <aside>
+      <h2>Guest Speakers</h2>
+      <h3>October<br><a href="speakers/toobin.html">Jeffery Toobin</a></h3>
+      <img src="../images/toobin75.jpg" alt="Jeffery Toobibn photo">
+      <h3>November<br><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+			<img src="../images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
+			<h3>January<br><a href="speakers/chua.html">Amy Chua</a></h3>
+			<img src="../images/chua75.jpg" alt="Amy Chua photo">
+			<h3>February<br><a href="speakers/sampson.html">Scott Sampson</a></h3>
+			<img src="../images/sampson75.jpg" alt="Scott Sampson photo">
+    </aside>
+  </main>
+  <footer>
+    <p>&copy; 2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+  </footer>
+</body>
+</html>

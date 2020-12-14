@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numbers Range Control</title>
+</head>
+<body>
+  <h3>Your Information:</h3>
+  <form action="test.php" name="test_form" method="get">
+    <label for="investment">Monthly investment: </label>
+    <input type="number" name="investment" id="investment" min="100" max="1000" step="100" value="300"><br><br>
+    <label for="book">Rate the book from 1 to 5: </label>
+    <input type="range" name="book" id="book" min="1" max="5" step="1"><br><br>
+    <input type="submit" name="submit" value="Submit Survey">
+  </form>
+</body>
+</html>

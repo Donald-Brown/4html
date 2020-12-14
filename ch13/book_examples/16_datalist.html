@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 30px;
+      }
+    </style>
+    <title>Data list</title>
+  </head>
+  <body>
+    <form action="survey.php" name="myform" method="post">
+      <p>
+        Our company is conducing a survey. please answer the question below.
+      </p>
+      <label for="link">What is your preferred search engine</label>
+      <input type="url" name="link" id="link" list="links" /><br /><br />
+      <datalist id="links">
+        <option value="http://www.google.com/" label="Google"></option>
+        <option value="http://www.yahoo.com/" label="Yahoo"></option>
+        <option value="http://www.bing.com/" label="Bing"></option>
+        <option value="http://www.ask.com/" label="Ask"></option>
+      </datalist>
+
+      <input type="submit" name="submit" value="Submit Survey" />
+    </form>
+  </body>
+</html>
