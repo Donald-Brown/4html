@@ -66,15 +66,18 @@ Page layout and responsive web design
 - short section on favicons
 - working with svg's
 
-
 ## chapter 12
-### working with tables 
+
+### working with tables
+
 - basic tables
 - css for formatting
 - more skills
 
 ## chapter 13
+
 ### How to work with forms
+
 - extensive examples
 - How to use form controls
 - Other form Skills
@@ -83,4 +86,11 @@ Page layout and responsive web design
 - A web page that uses HTML5 data validation
 
 ## chapter 14
-### y
+
+### how to add audio and video to a web site
+
+- intro to media on the web
+- how to add audio and video
+- a page with both
+- MIME types for identifying audio and video files
+- free video incoder (www.mirovideoconverter.com)
