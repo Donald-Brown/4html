@@ -94,3 +94,10 @@ Page layout and responsive web design
 - a page with both
 - MIME types for identifying audio and video files
 - free video incoder (www.mirovideoconverter.com)
+
+## chapter 15 
+### how to work with fonts and printing
+
+- how to embed fonts in a web page 
+- the skills for formatting printed web pages
+- a two-column web page with print formatting
