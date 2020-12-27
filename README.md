@@ -101,3 +101,11 @@ Page layout and responsive web design
 - how to embed fonts in a web page 
 - the skills for formatting printed web pages
 - a two-column web page with print formatting
+
+
+## chapter 16 
+### how to use CSS3 transitions, transforms, animations, and filters
+- CSS transitions
+- CSS transforms
+- CSS animations
+- CSS filters

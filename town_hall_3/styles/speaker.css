@@ -1,3 +1,8 @@
+@font-face {
+  font-family: arberkley;
+  src: url('../ARBERKLEY.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +30,7 @@ header {
 }
 
 header h2 {
+  font-family: arberkley, sans-serif;
   font-size: 175%;
   color: #800000;
 }
@@ -170,4 +176,41 @@ footer p {
   text-align: center;
   color: #fff;
   padding: 1em 0;
+}
+
+/** styles for printing */
+@media print {
+  body {
+    font-family: "Times New Roman", Times, serif;
+    width: auto;
+    background-color: #fff;
+    border: none;
+  }
+
+  nav, aside h2 {
+    display: none;
+  }
+
+  section { width: 5in; }
+
+  aside { 
+    width: 2in; 
+    float: none;
+    /* text-align: center; */
+  }
+
+  aside h3 { font-size: 100%; }
+  
+  article p { font-size: 87.5%; }
+
+  aside a { 
+    text-decoration: none;
+    color: #333;
+  }
+
+  footer p {
+    padding-top: 0.75em;
+    border: 3px solid #931420;
+  }
+
 }
