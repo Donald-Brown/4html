@@ -218,3 +218,40 @@ footer p {
   color: #fff;
   padding: 1em 0;
 }
+
+/**  transforms, transitions, and animations */
+/* .moves {
+  transition: margin-top 2s ease-in-out, margin-left 2s ease-in-out;
+}
+
+.moves:hover {
+  margin-left: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+} */
+
+.rotate {
+  transition: transform 3s ease-in-out;
+}
+
+.rotate:hover {
+  transform: rotate(720deg);
+  transform-origin: top left;
+}
+
+aside img {
+  /*animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction];*/
+  animation: move 3s ease-in-out 2s 4 alternate;
+}
+
+@keyframes move {
+  from {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  to {
+    margin-left: 100px;
+    margin-top: 20px;
+    transform: scale(1.4, 1.4)
+  }
+}

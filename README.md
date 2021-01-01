@@ -109,3 +109,10 @@ Page layout and responsive web design
 - CSS transforms - properties and methods 
 - CSS animations
 - CSS filters
+
+## chapter 17
+### How to design a website
+- users and usability
+- design guidlines
+- how to design a website
+- other design considerations
