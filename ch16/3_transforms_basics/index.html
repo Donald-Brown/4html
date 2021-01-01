@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .image1, .image2 {
+      transition: 2s;
+    }
+    .image1:hover {
+      transform: rotateY(360deg);
+    }
+    .image2:hover {
+      
+      transform: rotateY(180deg) translateX(-100%);
+      /* -webkit-transform: rotateY(180deg); */
+      /* transform-origin: right; */
+    }
+  </style>
+  <title>Transforms Basics</title>
+</head>
+<body>
+  <h3>Default transform origin</h3>
+  <p>
+    <img src="../images/08.jpg" alt=""> 
+    <img src="../images/08.jpg" alt="" class="image1">
+  </p>
+  <h3>modified transform origin</h3>
+  <p>
+    <img src="../images/08.jpg" alt="">
+    <img src="../images/08.jpg" alt="" class="image2">
+  </p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h1 {
+      font-size: 120%;
+      color: navy;
+      /* transition: [property] [duration] [timing-function] [delay];*/
+      transition: font-size 2s ease-out 1s, 
+                  color 3s ease-in 1s;
+    }
+
+    h1:hover {
+      cursor: pointer;
+      font-size: 200%;
+      color: red;
+    }
+
+    h2{
+      font-size: 120%;
+      color: olive;
+      transition: font-size 2s ease-out;
+    }
+
+    h2:hover {
+      font-size: 180%;
+    }
+
+    h3 {
+      font-size: 120%;
+      color: orangered;
+      transition: all 2s ease-in 1s;
+    }
+
+    h3:hover {
+      cursor: pointer;
+      font-size: 180%;
+      color: green;
+    }
+
+  </style>
+  <title>A Simple Transition</title>
+</head>
+<body>
+  <h1>Hover over this heading to see it transition</h1>
+  <h2>Try this one</h2>
+  <h3>Even another</h3>
+</body>
+</html>

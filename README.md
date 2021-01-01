@@ -106,6 +106,6 @@ Page layout and responsive web design
 ## chapter 16 
 ### how to use CSS3 transitions, transforms, animations, and filters
 - CSS transitions
-- CSS transforms
+- CSS transforms - properties and methods 
 - CSS animations
 - CSS filters
