@@ -116,3 +116,26 @@ Page layout and responsive web design
 - design guidlines
 - how to design a website
 - other design considerations
+
+## chapter 18
+### How to deploy a website on a web server
+- how to get a web host and a domain name
+- How to transfer files to and from the web
+- More skills for deploying a website
+
+## chapter 19
+### how JavaScript and jQuery are used to enhance web pages
+- intro to JS 
+- Email List JS
+- intro to jQuery
+- Email List jQuery
+- JS and jQuery as a non-programmer
+
+## chapter 20 
+### third party development tools
+- intro to web dev tools 
+- emmet, git, and github
+- sass
+- bootstrap
+- node.js
+- gulp.js
